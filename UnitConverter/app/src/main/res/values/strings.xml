@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="title_settings_activity">Settings</string>
+    <string name="title_recent_activity">Recent</string>
+    <string name="title_help_activity">Help</string>
+
+</resources>

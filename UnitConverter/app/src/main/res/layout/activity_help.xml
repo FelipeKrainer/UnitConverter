@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:text="Settings"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/recent_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:text="Recent"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/unitconverter_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text="Step-by-step"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/Step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 1. Click on the button to choose the unit you want to convert from."
+            android:textAlignment="viewStart"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/Step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 2. Click on the button to choose the unit you want to convert to."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/Step3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 3. Type the number you want to convert."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/step10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 4. Click on the convert button to display the result."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/Step4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Optional Steps"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/Step5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Settings Tab"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/step5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 1. Click on the button to choose the default unit to convert from."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/step6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 2. Click on the button to choose the default unit to convert to."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/step7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Step 3. Click on the save button."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/step8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="Recent Tab"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/step9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="On this tab, your 10 recent conversions will be displayed. Click on the clear conversions button to clear the list."
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

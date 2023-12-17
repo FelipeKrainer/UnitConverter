@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="16dp"
+        app:elevation="6dp"
+        app:backgroundTint="@color/purple_500"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/home_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:text="Home"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/settings_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:text="Settings"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/recent_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:text="Recent"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/unitconverter_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Select Default Units"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="First Unit"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:orientation="horizontal"
+            android:tag="radioGroup1Tag">
+
+            <RadioButton
+                android:id="@+id/centimeter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="centimeter"
+                android:text="Cm" />
+
+            <RadioButton
+                android:id="@+id/millimeter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="millimeter"
+                android:text="Mm" />
+
+            <RadioButton
+                android:id="@+id/kilometer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="kilometer"
+                android:text="Km" />
+
+            <RadioButton
+                android:id="@+id/feet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="feet"
+                android:text="Ft" />
+
+            <RadioButton
+                android:id="@+id/miles"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="miles"
+                android:text="Mi" />
+
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:text="Second Unit"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup2"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:orientation="horizontal"
+            android:tag="radioGroup2Tag">
+
+            <RadioButton
+                android:id="@+id/centimeter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="centimeter2"
+                android:text="Cm" />
+
+            <RadioButton
+                android:id="@+id/millimeter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="millimeter2"
+                android:text="Mm" />
+
+            <RadioButton
+                android:id="@+id/kilometer2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="kilometer2"
+                android:text="Km" />
+
+            <RadioButton
+                android:id="@+id/feet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="feet2"
+                android:text="Ft" />
+
+            <RadioButton
+                android:id="@+id/miles2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:tag="miles2"
+                android:text="Mi" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:background="@color/purple_200"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
